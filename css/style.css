@@ -8,6 +8,12 @@
 //название шрифта
 
 @font-face {
+    font-family: Lato Thin;
+    src: url(../assets/fonts/Lato-Thin.ttf);
+}
+
+
+@font-face {
     font-family: Lato Light;
     src: url(../assets/fonts/Lato-Light.ttf);
 }
@@ -534,4 +540,110 @@ tbody {
 
 .packages-item-btn:hover {
     opacity: 0.5;
+}
+
+/*------------about--------------*/
+
+.about {
+	height: 400px;
+}
+
+.about-container {
+	display: flex;
+	height: 200px;
+	    width: 100%;
+    justify-content: space-between;
+}
+
+.about-info {
+		width: 425px;
+}
+
+.about-info::after {
+ content: url('data:image/svg+xml;utf8,<svg width="1px" height="200px" xmlns="http://www.w3.org/2000/svg"><line x1="100%" y1="0" x2="100%" y2="100%" stroke="rgba(0, 0, 0, 0.13)" stroke-dasharray="4" stroke-width="2px" /></svg>');
+	position: relative;
+    top: -188px;
+    left: 520px;
+}
+
+.about-headline {
+	color: #303030;
+	font-size: 35.5px;
+	font-family: Lato Regular;
+		font-weight: 500;
+}
+
+.about-headline span {
+	font-weight: 900;
+}
+
+.about-text {
+	color: #747474;
+	font-family: Lato Light;
+	font-size: 18px;
+	line-height: 27px;
+    margin-top: 23px;
+}
+
+.about-persons {
+	display: flex;
+	justify-content: flex-end;
+
+}
+
+.about-person-item {
+	    margin:8px 17px 0 105px;
+	    display: flex;
+	    flex-direction: column;
+	    font-size: 17px;
+	    align-content: center;
+	    align-items: center;
+}
+
+.person-photo {
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	border: 5px solid #e5e5e5;
+}
+
+.person-1 .person-photo {
+	background-image: url(../assets/img/person-1.jpg);
+}
+
+.person-2 .person-photo {
+	background-image: url(../assets/img/person-2.jpg);
+	       background-position: -3px -4px;
+}
+
+.person-3 .person-photo  {
+background-image: url(../assets/img/person-3.jpg);
+    background-position: -8px 0;
+}
+
+.person-name {
+	font-family: Lato Bold;
+	color: #303030;
+	    margin-top: 13px;
+}
+
+.person-post {
+	font-family: Lato Regular;
+	color: #8e8e8e;
+	    margin: 7px 0;
+}
+
+.person-social {
+	width: 90px;
+		display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.person-social-item {
+	color: #bfbfbf;
+}
+
+.person-social-item:hover {
+	color: #1f89ba;
 }
