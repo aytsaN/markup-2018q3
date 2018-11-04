@@ -1,0 +1,190 @@
+/*Позиционирование
+Блочная модель
+Типографика
+Оформление
+Анимация
+Разное*/
+
+@font-face {
+    font-family: Lato Regular;
+    src: url(../assets/fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lato Medium;
+    src: url(../assets/fonts/Lato-Medium.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/fonts/Montserrat-ExtraLight.otf);
+}
+
+@font-face {
+    font-family: Myriad;
+    src: url(../assets/fonts/8141.otf);
+}
+
+/*---------specification---------*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    min-width: 1600px;
+    width: 100%;
+}
+
+.hdr-container {
+    height: 945px;
+    width: 100%;
+    background-blend-mode: multiply;
+    background: url(../assets/img/bg/bg-hdr.jpg) rgba(0, 0, 0, 0.8);
+    background-size: cover;
+    color: #fff;
+}
+
+.wrapper {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.hdr-top {
+    // height: 90px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    flex: 0 0 90px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1.logo {
+    position: relative;
+    width: 165px;
+    top: 4px;
+    left: 2px;
+    padding-top: 30px;
+    height: 0;
+    background: url("../assets/img/logo.png") no-repeat;
+    overflow: hidden;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 69px;
+    padding: 36px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+.nav-item:hover {
+    border-bottom: 1px solid #ffffff;
+}
+
+.nav-item a {
+    font-family: Lato Medium;
+    font-size: 16px;
+    color: #fff;
+}
+
+.hdr-center {
+    //height: 100%;
+    flex: 0 0 calc(100% - 90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hdr-text p:first-child {
+    position: relative;
+    font-family: Myriad;
+    font-size: 72px;
+    text-transform: uppercase;
+    text-align: center;
+    bottom: 13px;
+}
+
+.hdr-text p+p {
+    text-align: center;
+    font-family: Georgia;
+    font-style: italic;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.hdr-btn {
+    height: 120px;
+    display: flex;
+}
+
+.btn-login {
+    width: 103%;
+    background: #21424a;
+}
+
+.btn-registr {
+    width: 100%;
+    background: #2fac6c;
+}
+
+.btn-registr::before {
+    content: "";
+    display: inline-block;
+    background: #2fac6c;
+    width: 60px;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: -15px;
+    transform: skew(-13deg);
+}
+
+.btn-login:hover,
+.btn-registr:hover,
+.btn-registr:hover::before {
+    filter: grayscale(100%);
+}
+
+.btn-login span,
+.btn-registr span {
+	position: relative;
+	font-family: Lato Medium;
+	font-size: 22px;
+text-transform: uppercase;
+color: #ffffff;
+}
+
+.btn-login span {
+	    top: 38%;
+    left: 58%;
+}
+
+.btn-registr span {
+left: 23%;
+    bottom: 43%;
+}
+
+/*----------------header---------------------*/
+
