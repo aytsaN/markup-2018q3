@@ -8,6 +8,11 @@
 //название шрифта
 
 @font-face {
+    font-family: Lato Light;
+    src: url(../assets/fonts/Lato-Light.ttf);
+}
+
+@font-face {
     font-family: Lato Regular;
     src: url(../assets/fonts/Lato-Regular.ttf);
 }
@@ -20,6 +25,11 @@
 @font-face {
     font-family: Lato Heavy;
     src: url(../assets/fonts/Lato-Heavy.ttf);
+}
+
+@font-face {
+    font-family: Lato Bold;
+    src: url(../assets/fonts/Lato-Bold.ttf);
 }
 
 @font-face {
@@ -52,6 +62,7 @@
 
 body {
     width: 100vw;
+    background-color: #ffffff;
 }
 
 a {
@@ -209,7 +220,7 @@ main {
 section.domain {
     height: 578px;
     background-color: #fafafa;
-    background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill: none; stroke: rgba(0, 0, 0, 0.13); stroke-width: 5; stroke-dasharray: 8 8'/></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill: none; stroke: rgba(0, 0, 0, 0.13); stroke-width: 1; stroke-dasharray: 8 8'/></svg>");
 }
 
 .damain-container {
@@ -236,11 +247,11 @@ section.domain {
 
 .domain-table,
 .domain-form {
-	 border: 1px solid #d5d5d5;
-	  box-sizing: border-box;
-	   width: 100%;
-	   display: flex;
-	       font-family: Lato Medium;
+    border: 1px solid #d5d5d5;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    font-family: Lato Medium;
 }
 
 .domain-form {
@@ -302,25 +313,25 @@ section.domain {
 }
 
 .domain-table {
-     border-collapse: collapse;
+    border-collapse: collapse;
     height: 194px;
     color: #cbcbcb;
     margin-top: 10px;
 }
 
 tbody {
-	width: 100%;
+    width: 100%;
 }
 
 .table-row-top,
 .table-row-bottom {
-	display: flex;
-	height: 50%;
+    display: flex;
+    height: 50%;
 }
 
 .table-row-top td,
 .table-row-bottom td {
-	display: inline-flex;
+    display: inline-flex;
     width: 25%;
     height: 100%;
     justify-content: center;
@@ -330,12 +341,12 @@ tbody {
 
 .table-row-top td:first-child,
 .table-row-bottom td:first-child {
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 
 .table-row-top td::before {
-	content: "";
+    content: "";
     position: absolute;
     display: block;
     width: 90%;
@@ -348,7 +359,7 @@ tbody {
 
 .table-row-top td::after,
 .table-row-bottom td::after {
-	    content: "";
+    content: "";
     position: absolute;
     display: block;
     width: 1px;
@@ -360,6 +371,167 @@ tbody {
 }
 
 .table-row-top td:last-child::after,
-.table-row-bottom td:last-child::after  {
-	width: 0;
+.table-row-bottom td:last-child::after {
+    width: 0;
+}
+
+/*------------packages---------------*/
+
+.packages {
+    position: relative;
+    height: 765px;
+}
+
+.packages-bg {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-image: url(../assets/img/bg/Untitled-7.jpg);
+    z-index: -1;
+    background-position-y: 38%;
+}
+
+.packages-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+.packages-item {
+    background: #ffffff;
+    height: 560px;
+    width: 255px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.06);
+    border-top-width: 5px;
+    border-top-style: solid;
+    margin-top: 100px;
+    padding: 28px;
+}
+
+.package-1,
+.package-1 .packages-item-cost {
+    border-color: #f9d423;
+    color: #f9d423;
+}
+
+.package-2,
+.package-2 .packages-item-cost {
+    border-color: #7f8c8d;
+    color: #7f8c8d;
+}
+
+.package-3,
+.package-3 .packages-item-cost {
+    border-color: #f5603f;
+    color: #f5603f;
+}
+
+.package-4,
+.package-4 .packages-item-cost {
+    border-color: #1cbb9d;
+    color: #1cbb9d;
+}
+
+.packages-item-logo {
+    position: relative;
+    width: 53px;
+    height: 53px;
+    margin: 8px auto;
+}
+
+.packages-item-logo svg {
+    position: absolute;
+    right: 2px;
+    stroke-width: 6px;
+    stroke-linecap: round;
+}
+
+.package-2 svg,
+.package-3 svg {
+    transform: rotate(-90deg);
+}
+
+.packages-item-logo .fa {
+    position: absolute;
+    top: 37%;
+    left: 26%;
+    font-size: 17px;
+}
+
+.packages-item-name,
+.packages-item-btn {
+    font-family: Lato Bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #282828;
+    margin: 18px 0;
+}
+
+.packages-item-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    padding: 19px 0 0;
+}
+
+.packages-item-info p {
+    font-family: Lato Regular;
+    margin-bottom: 21px;
+}
+
+.packages-info-col-name {
+    color: #b4b4b4;
+}
+
+.packages-info-col-val p {
+    text-align: right;
+}
+
+.packages-item-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.packages-item .packages-item-cost {
+    font-family: Lato Bold;
+    font-size: 28px;
+    text-align: center;
+    color: #282828;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    margin: 19px auto;
+    width: 52%;
+    padding: 5px 0;
+}
+
+.packages-item-cost::before {
+    content: "$";
+    position: relative;
+    font-size: 17px;
+    bottom: 8px;
+}
+
+.packages-item-cost::after {
+    content: "/Mo";
+    position: relative;
+    color: #8d8d8d;
+    font-size: 13px;
+}
+
+.packages-item-btn {
+    margin: 0;
+}
+
+.packages-item-btn:hover {
+    opacity: 0.5;
 }
