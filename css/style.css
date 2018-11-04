@@ -5,6 +5,8 @@
 Анимация
 Разное*/
 
+//название шрифта
+
 @font-face {
     font-family: Lato Regular;
     src: url(../assets/fonts/Lato-Regular.ttf);
@@ -16,8 +18,18 @@
 }
 
 @font-face {
+    font-family: Lato Heavy;
+    src: url(../assets/fonts/Lato-Heavy.ttf);
+}
+
+@font-face {
     font-family: Montserrat;
     src: url(../assets/fonts/Montserrat-ExtraLight.otf);
+}
+
+@font-face {
+    font-family: "Montserrat UltraLight";
+    src: url(../assets/fonts/Montserrat-UltraLight.ttf);
 }
 
 @font-face {
@@ -66,6 +78,8 @@ a {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hdr-top {
@@ -169,22 +183,183 @@ h1.logo {
 
 .btn-login span,
 .btn-registr span {
-	position: relative;
-	font-family: Lato Medium;
-	font-size: 22px;
-text-transform: uppercase;
-color: #ffffff;
+    position: relative;
+    font-family: Lato Medium;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #ffffff;
 }
 
 .btn-login span {
-	    top: 38%;
+    top: 38%;
     left: 58%;
 }
 
 .btn-registr span {
-left: 23%;
+    left: 23%;
     bottom: 43%;
 }
 
 /*----------------header---------------------*/
 
+main {
+    min-width: 1600px;
+}
+
+section.domain {
+    height: 578px;
+    background-color: #fafafa;
+    background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill: none; stroke: rgba(0, 0, 0, 0.13); stroke-width: 5; stroke-dasharray: 8 8'/></svg>");
+}
+
+.damain-container {
+    height: 402px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 74%;
+
+}
+
+.damain-headline {
+    font-family: "Lato Heavy";
+    font-size: 24px;
+    color: #383737;
+}
+
+.damain-text {
+    font-family: Montserrat UltraLight;
+    font-size: 16px;
+    color: #a2a2a2;
+    margin: 20px 0 20px;
+}
+
+.domain-table,
+.domain-form {
+	 border: 1px solid #d5d5d5;
+	  box-sizing: border-box;
+	   width: 100%;
+	   display: flex;
+	       font-family: Lato Medium;
+}
+
+.domain-form {
+    background-color: #ffffff;
+    height: 50px;
+    margin: 30px 0;
+    padding: 8px;
+}
+
+.domain-form span {
+    display: inline-flex;
+    width: 64px;
+    align-items: center;
+    justify-content: center;
+    color: #cbcbcb;
+}
+
+.domain-input {
+    width: 86%;
+    border: 0;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    outline: none;
+    padding: 0 14px;
+}
+
+::-webkit-input-placeholder {
+    color: #868686;
+}
+
+.domain-name {
+    border: none;
+    width: 70px;
+    outline: none;
+    color: #cbcbcb;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    cursor: pointer;
+    padding: 0 16px;
+
+}
+
+.domain-form::after {
+    content: '>';
+    transform: rotate(90deg) scale(1, 1.5);
+    position: relative;
+    pointer-events: none;
+    color: #c8c8c8;
+    position: relative;
+    right: 15px;
+}
+
+.domain-name option {
+    color: #cbcbcb;
+    border: 0;
+    width: 10%;
+}
+
+.domain-table {
+     border-collapse: collapse;
+    height: 194px;
+    color: #cbcbcb;
+    margin-top: 10px;
+}
+
+tbody {
+	width: 100%;
+}
+
+.table-row-top,
+.table-row-bottom {
+	display: flex;
+	height: 50%;
+}
+
+.table-row-top td,
+.table-row-bottom td {
+	display: inline-flex;
+    width: 25%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.table-row-top td:first-child,
+.table-row-bottom td:first-child {
+	text-transform: uppercase;
+}
+
+
+.table-row-top td::before {
+	content: "";
+    position: absolute;
+    display: block;
+    width: 90%;
+    background: #d9d9d9;
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.table-row-top td::after,
+.table-row-bottom td::after {
+	    content: "";
+    position: absolute;
+    display: block;
+    width: 1px;
+    background: #d9d9d9;
+    height: 80%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.table-row-top td:last-child::after,
+.table-row-bottom td:last-child::after  {
+	width: 0;
+}
