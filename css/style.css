@@ -705,3 +705,66 @@ background-image: url(../assets/img/person-3.jpg);
 .dot-active {
 	background: #ffffff;
 }
+
+/*----------------benifits---------------*/
+
+.benifits {
+	height: 342px;
+}
+
+.benifits-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 150px;
+}
+
+.benifits-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 20%;
+}
+
+.benifits-logo {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+	font-size: 28px;
+	    margin: 3px 0 20px;
+}
+
+.benifits-logo.yellow {
+	background: #f1c40f;
+}
+
+.benifits-logo.blue {
+	background: #0faff1;
+}
+
+.benifits-logo.grey {
+	background: #95a5a6;
+}
+
+.benifits-logo.orange {
+	background: #f1540f;
+}
+
+.benifits-name {
+	font-family: Lato Heavy;
+	font-size: 18px;
+	color: #303030;
+	    margin-bottom: 5px;
+}
+
+.benifits-description {
+	font-family: Lato Light;
+	font-size: 16px;
+	color: #7e7e7e;
+	line-height: 22px;
+	text-align: center;
+}
