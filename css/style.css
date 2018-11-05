@@ -12,7 +12,6 @@
     src: url(../assets/fonts/Lato-Thin.ttf);
 }
 
-
 @font-face {
     font-family: Lato Light;
     src: url(../assets/fonts/Lato-Light.ttf);
@@ -394,9 +393,10 @@ tbody {
     width: 100%;
     left: 0;
     top: 0;
-    background-image: url(../assets/img/bg/Untitled-7.jpg);
+    background-image: url(../assets/img/bg/bg-packages.jpg);
     z-index: -1;
     background-position-y: 38%;
+    background-size: cover;
 }
 
 .packages-container {
@@ -646,4 +646,62 @@ background-image: url(../assets/img/person-3.jpg);
 
 .person-social-item:hover {
 	color: #1f89ba;
+}
+
+/*------------------comments-slider----------------*/
+
+.comments-slider {
+	height: 190px;
+	background-image: url(../assets/img/bg/bg-comments.jpg);
+	background-size: cover;
+	    background-position: 50% -60%;
+}
+
+.comments-container {
+	text-align: center;
+    width: 80%;
+    height: 55%;
+    font-size: 20px;
+    font-family: Lato Light;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.quotation {
+		line-height: 30px;
+}
+
+.comments-control {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.comments-writer {
+	font-family: Lato Bold;
+	    padding: 0px 9px;
+	border-right: 1px solid #969696;
+
+}
+
+.dots-navigation {
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dot {
+	border-radius: 50%;
+	border: 1px solid #ffffff;
+	width: 8px;
+	height: 8px;
+	margin-left: 12px;
+	cursor: pointer;
+}
+
+.dot:hover,
+.dot-active {
+	background: #ffffff;
 }
