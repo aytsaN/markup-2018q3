@@ -1,5 +1,7 @@
 
-/*название шрифта*/
+/*название шрифта
+
+комменты*/
 
 @font-face {
     font-family: "Lato Thin";
@@ -113,11 +115,13 @@ h1.logo {
 }
 
 .nav {
+		min-width: 53%;
     display: flex;
+    justify-content: space-between;
 }
 
 .nav-item {
-    margin-left: 69px;
+		margin: 0 5px;
     padding: 35px 0;
 
     border-bottom: 1px solid rgba(255, 255, 255, 0);
@@ -603,27 +607,29 @@ tbody {
 }
 
 .about {
-    height: 400px;
+    min-height: 400px;
 }
 
 .about-container {
     width: 100%;
-    height: 200px;
+    min-height: 200px;
     display: flex;
-
     justify-content: space-between;
+    padding: 8.5% 0 8%;
 }
 
 .about-info {
+		position: relative;
+
     width: 425px;
 }
 
 .about-info::after {
-    position: relative;
-    top: -188px;
-    left: 520px;
+    position: absolute;
+    top: 0;
+    left: 122%;
 
-    content: url("data:image/svg+xml;utf8,<svg width='1' height='200' xmlns='http://www.w3.org/2000/svg'><line x1='100%' y1='0' x2='100%' y2='100%' stroke='rgba(0, 0, 0, 0.13)' stroke-dasharray='4' stroke-width='2' /></svg>");
+    content: url("data:image/svg+xml;utf8,<svg width='1' height='200px' xmlns='http://www.w3.org/2000/svg'><line x1='100%' y1='0' x2='100%' y2='100%' stroke='rgba(0, 0, 0, 0.13)' stroke-dasharray='4' stroke-width='2' /></svg>");
 }
 
 .about-headline {
@@ -648,7 +654,8 @@ tbody {
 
 .about-persons {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .about-person-item {
@@ -714,10 +721,12 @@ tbody {
 }
 
 .comments-slider {
-    height: 190px;
+    min-height: 190px;
+		display: flex;
+		align-items: center;
+
     background-image: url("../assets/img/bg/bg-comments.jpg");
     background-position: 50% -60%;
-    background-size: cover;
 }
 
 .comments-container {
@@ -776,15 +785,18 @@ tbody {
 }
 
 .benifits {
-    height: 342px;
+    min-height: 342px;
+    display: flex;
+    align-items: center;
 }
 
 .benifits-container {
 	  width: 100%;
-    height: 150px;
+    min-height: 150px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .benifits-item {
@@ -849,8 +861,7 @@ tbody {
 }
 
 .footer {
-   // min-width: 1600px;
-    height: 295px;
+    min-height: 295px;
 
 		font-size: 15px;
     font-family: "Lato Light", "Arial", sans-serif;
@@ -907,7 +918,8 @@ tbody {
     padding: 33px 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .footer-item {
@@ -921,13 +933,13 @@ tbody {
 }
 
 .footer-item:first-child {
-    min-width: 378px;
-    padding-right: 48px;
+    flex-basis: 31%;
+    padding-right: 6%;
 }
 
 .footer-item:last-child {
-    min-width: 318px;
-    padding-left: 75px;
+    flex-basis: 27%;
+    padding-left: 6.8%;
 }
 
 .footer-text {
@@ -945,8 +957,9 @@ tbody {
 }
 
 .footer-links {
-    min-width: 503px;
-    padding: 18px 100px;
+    flex-basis: 42%;
+    max-height: 170px;
+    padding: 18px 9%;
 
     border-width: 0 1px;
     border-style: solid;
@@ -988,4 +1001,50 @@ address div .fa {
 
 .address {
     line-height: 29px
+}
+
+@media (max-width: 1200px) {
+	.footer-item:last-child {
+				min-width: 500px;
+		padding: 10px 0;
+	}
+
+.footer-item:first-child,
+.footer-item:last-child,
+	.footer-links {
+		padding: 20px;
+		flex-basis: 100%;
+
+		border: none;
+	}
+}
+
+@media (max-width: 600px) {
+	.packages-container,
+	.benifits-container,
+	.about-container,
+	.hdr-top,
+	.footer-top {
+				justify-content: center;
+	}
+		.about-container {
+			flex-wrap: wrap;
+		}
+
+.hdr-top > a,
+	.about-info::after,
+	.nav-item:first-child,
+	.footer-logo {
+		display: none;
+	}
+
+	.nav {
+		min-width: 90%;
+	}
+
+	.packages-item,
+	.about-person-item,
+	.benifits-item {
+	margin: 10px;
+	}
 }
