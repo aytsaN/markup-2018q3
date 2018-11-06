@@ -42,10 +42,10 @@
     <main class="main">
         <section class="domain" id="domain">
             <div class="wrapper">
-                <div class="damain-container">
-                    <h2 class="damain-headline">Would you like to buy a new domain ?</h2>
-                    <p class="damain-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor mauris ac nulla interdum, id molestier.</p>
-                    <form class="domain-form" action="">
+                <div class="domain-container">
+                    <h2 class="domain-headline">Would you like to buy a new domain ?</h2>
+                    <p class="domain-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor mauris ac nulla interdum, id molestier.</p>
+                    <form class="domain-form">
                         <span>www.</span>
                         <input class="domain-input" type="text" placeholder="What do you want?">
                         <select class="domain-name">
@@ -209,116 +209,137 @@
                         </div>
                     </div>
                 </div>
-                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                    <line x1="0" y1="100%" x2="100%" y2="100%" stroke="rgba(0, 0, 0, 0.13)" stroke-dasharray="4" stroke-width="2px" />
+                <svg class="packages-border-bottom" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="100%" x2="100%" y2="100%" stroke="rgba(0, 0, 0, 0.13)" stroke-dasharray="4" stroke-width="2" />
                 </svg>
             </div>
         </section>
         <section class="about" id="about">
-        	<div class="wrapper">
-        		<div class="about-container">
-        			<div class="about-info">
-        				<h2 class="about-headline"><span>About</span> Us</h2>
-        				<p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat eget diam sit amet molestie.Curabitur. ut ipsum bibendum tortor lacinia fermentum nec joeıa. Mauris at augue libero. Fusce posuere, sapien nec poır. Uaee augsuada sed mauris in tincidunt...</p>
-        			</div>
-        			<div class="about-persons">
-        				<div class="about-person-item person-1">
-        					<div class="person-photo"></div>
-        					<div class="person-name">Jonny Doe</div>
-        					<div class="person-post">Designer</div>
-        					<div class="person-social">
-        						<a class="person-social-item" href="#"><i class="fa fa-facebook"></i></a>
-        						<a class="person-social-item" href="#"><i class="fa fa-twitter"></i></a>
-        						<a class="person-social-item" href="#"><i class="fa fa-link"></i></a>
-        					</div>
-        				</div>
-        				<div class="about-person-item person-2">
-        					<div class="person-photo"></div>
-        					<div class="person-name">John Doe</div>
-        					<div class="person-post">Designer</div>
-        					<div class="person-social">
-        						<a class="person-social-item" href="#"><i class="fa fa-facebook"></i></a>
-        						<a class="person-social-item" href="#"><i class="fa fa-twitter"></i></a>
-        						<a class="person-social-item" href="#"><i class="fa fa-link"></i></a>
-        					</div>
-        				</div>
-        				<div class="about-person-item person-3">
-        					<div class="person-photo"></div>
-        					<div class="person-name">Johnathan Doe</div>
-        					<div class="person-post">Designer</div>
-        					<div class="person-social">
-        						<a class="person-social-item" href="#"><i class="fa fa-facebook"></i></a>
-        						<a class="person-social-item" href="#"><i class="fa fa-twitter"></i></a>
-        						<a class="person-social-item" href="#"><i class="fa fa-link"></i></a>
-        					</div>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
+            <div class="wrapper">
+                <div class="about-container">
+                    <div class="about-info">
+                        <h2 class="about-headline"><span>About</span> Us</h2>
+                        <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat eget diam sit amet molestie.Curabitur. ut ipsum bibendum tortor lacinia fermentum nec joeıa. Mauris at augue libero. Fusce posuere, sapien nec poır. Uaee augsuada sed mauris in tincidunt...</p>
+                    </div>
+                    <div class="about-persons">
+                        <div class="about-person-item person-1">
+                            <div class="person-photo"></div>
+                            <div class="person-name">Jonny Doe</div>
+                            <div class="person-post">Designer</div>
+                            <div class="person-social">
+                                <a class="person-social-item" href="#"><i class="fa fa-facebook"></i></a>
+                                <a class="person-social-item" href="#"><i class="fa fa-twitter"></i></a>
+                                <a class="person-social-item" href="#"><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="about-person-item person-2">
+                            <div class="person-photo"></div>
+                            <div class="person-name">John Doe</div>
+                            <div class="person-post">Designer</div>
+                            <div class="person-social">
+                                <a class="person-social-item" href="#"><i class="fa fa-facebook"></i></a>
+                                <a class="person-social-item" href="#"><i class="fa fa-twitter"></i></a>
+                                <a class="person-social-item" href="#"><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="about-person-item person-3">
+                            <div class="person-photo"></div>
+                            <div class="person-name">Johnathan Doe</div>
+                            <div class="person-post">Designer</div>
+                            <div class="person-social">
+                                <a class="person-social-item" href="#"><i class="fa fa-facebook"></i></a>
+                                <a class="person-social-item" href="#"><i class="fa fa-twitter"></i></a>
+                                <a class="person-social-item" href="#"><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="comments-slider" id="comments-slider">
-        	<div class="wrapper">
-        		<div class="comments-container">
-        			<q class="quotation" id="quotation">Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus enimqui interdum dolor pulvinar vitae.</q>
-        			<div class="comments-control">
-        					<div class="comments-writer">John Doe</div>
-        					<div class="dots-navigation">
-        						<div class="dot dot-active"></div>
-        						<div class="dot"></div>
-        						<div class="dot"></div>
-        					</div>
-        			</div>
-
-        		</div>
-        	</div>
+            <div class="wrapper">
+                <div class="comments-container">
+                    <q class="quotation" id="quotation">Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus enimqui interdum dolor pulvinar vitae.</q>
+                    <div class="comments-control">
+                        <div class="comments-writer">John Doe</div>
+                        <div class="dots-navigation">
+                            <div class="dot dot-active"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="benifits" id="benifits">
-        	<div class="wrapper">
-        		<div class="benifits-container">
-        			<div class="benifits-item">
-        				<div class="benifits-logo yellow">
-        					<i class="fa fa-flash"></i>
-        				</div>
-        				<h3 class="benifits-name">Fast Servers</h3>
-        				<p class="benifits-description">Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
-        			</div>
-        			<div class="benifits-item">
-        				<div class="benifits-logo blue">
-        					<i class="fa fa-cloud"></i>
-        				</div>
-        				<h3 class="benifits-name">Cloud Servers</h3>
-        				<p class="benifits-description">Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
-        			</div>
-        			<div class="benifits-item">
-        				<div class="benifits-logo grey">
-        					<i class="fa fa-arrows"></i>
-        				</div>
-        				<h3 class="benifits-name">Domain Transfer</h3>
-        				<p class="benifits-description">Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
-        			</div>
-        			<div class="benifits-item">
-        				<div class="benifits-logo orange">
-        					<i class="fa fa-comments"></i>
-        				</div>
-        				<h3 class="benifits-name">Live Support</h3>
-        				<p class="benifits-description">Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
-        			</div>
-        		</div>
-        	</div>
+            <div class="wrapper">
+                <div class="benifits-container">
+                    <div class="benifits-item">
+                        <div class="benifits-logo yellow">
+                            <i class="fa fa-flash"></i>
+                        </div>
+                        <h3 class="benifits-name"><a href="#">Fast Servers</a></h3>
+                        <p class="benifits-description">Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
+                    </div>
+                    <div class="benifits-item">
+                        <div class="benifits-logo blue">
+                            <i class="fa fa-cloud"></i>
+                        </div>
+                        <h3 class="benifits-name"><a href="#">Cloud Servers</a></h3>
+                        <p class="benifits-description">Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
+                    </div>
+                    <div class="benifits-item">
+                        <div class="benifits-logo grey">
+                            <i class="fa fa-arrows"></i>
+                        </div>
+                        <h3 class="benifits-name"><a href="#">Domain Transfer</a></h3>
+                        <p class="benifits-description">Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
+                    </div>
+                    <div class="benifits-item">
+                        <div class="benifits-logo orange">
+                            <i class="fa fa-comments"></i>
+                        </div>
+                        <h3 class="benifits-name"><a href="#">Live Support</a></h3>
+                        <p class="benifits-description">Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="footer" id="footer">
-    	<div class="wrapper">
-    	<div class="footer-top">
-    		<img class="footer-logo" src="assets/img/logo.png" alt="Ghost Host">
-    		<div class="footer-nav"></div>
-    		<div class="footer-container">
-    			<div class="footer-item"></div>
-    			<div class="footer-item"></div>
-    			<div class="footer-item"></div>
-    		</div>
-    	</div>
-    	</div>
+        <div class="wrapper">
+            <div class="footer-top">
+                <img class="footer-logo" src="assets/img/logo.png" alt="Ghost Host" width="135">
+                <div class="footer-nav">
+                    <div class="footer-nav-item"><a href="#">home</a></div>
+                    <div class="footer-nav-item"><a href="#">about us</a></div>
+                    <div class="footer-nav-item"><a href="#">blog</a></div>
+                    <div class="footer-nav-item"><a href="#">policy</a></div>
+                    <div class="footer-nav-item"><a href="#">contact</a></div>
+                </div>
+            </div>
+            <div class="footer-container">
+                <div class="footer-item">
+                    <p class="footer-text">Lorem ipsum dolor sit amet, consecteteeseurı adipiscing elit. Donec mollis commodoeesene que, non commodo risus volutpat vel.</p>
+                    <div class="footer-name">Design by <span>Mert Can Eyriyer</span>.</div>
+                </div>
+                <div class="footer-item footer-links">
+                    <div class="footer-links-item"><a href="#"><i class="fa fa-angle-right"></i>Support</a></div>
+                    <div class="footer-links-item"><a href="#"><i class="fa fa-angle-right"></i>Account</a></div>
+                    <div class="footer-links-item"><a href="#"><i class="fa fa-angle-right"></i>Product Catalog</a></div>
+                    <div class="footer-links-item"><a href="#"><i class="fa fa-angle-right"></i>Shortcodes</a></div>
+                    <div class="footer-links-item"><a href="#"><i class="fa fa-angle-right"></i>Site Map</a></div>
+                    <div class="footer-links-item"><a href="#"><i class="fa fa-angle-right"></i>Whois Search</a></div>
+                    <div class="footer-links-item"><a href="#"><i class="fa fa-angle-right"></i>Web Mail</a></div>
+                    <div class="footer-links-item"><a href="#"><i class="fa fa-angle-right"></i>Find Domain</a></div>
+                </div>
+                <address class="footer-item">
+                    <div class="tel"><a href="tel:000000000000"><i class="fa fa-phone"></i>0000-0000-0000</a></div>
+                    <div class="email"><a href="mailto:informationteam@ghosthost.com"><i class="fa fa-envelope"></i>informationteam@ghosthost.com</a></div>
+                    <div class="address">Lorem Ipsum Street, Lorem Avenue, Lorem Ipsum</div>
+                </address>
+            </div>
+        </div>
     </footer>
 </body>
 
